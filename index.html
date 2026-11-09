@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Document encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title and descriptive metadata -->
+    <title>Smart Parking System</title>
+    <meta name="description"
+        content="Find available parking, reserve a space, and manage bookings with the Smart Parking System.">
+    <meta name="application-name" content="Smart Parking System">
+    <meta name="theme-color" content="#102a43">
+
+    <!-- Load the existing site styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Establish the chart provider connection before its script is requested -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+</head>
+
+<body>
+    <!-- The client-side router renders the selected page into this container. -->
+    <div id="app"></div>
+
+    <!-- Shared dialog used by forms, details, and confirmation messages. -->
+    <dialog id="dlg"></dialog>
+
+    <!-- Shared live region for status messages and action feedback. -->
+    <div id="toast" role="status"></div>
+
+    <!-- Chart.js provides the administrator dashboard charts. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+    <!-- The application script uses the containers declared above. -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
